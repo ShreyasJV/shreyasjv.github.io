@@ -27,11 +27,20 @@ body {
   line-height: 1.6;
   text-transform: lowercase;
   transition: background 0.3s ease, color 0.3s ease;
+
+  /* add these for vertical + horizontal centering */
+  display: flex;
+  justify-content: center; /* horizontal centering */
+  align-items: center;     /* vertical centering */
+  min-height: 100vh;       /* full viewport height */
+  text-align: center;      /* optional: center text inside container */
 }
+
 
 .container {
   max-width: 750px;
-  margin: 80px auto;
+  /* remove margin-top since Flexbox handles centering */
+  margin: 0;
   padding: 0 20px;
 }
 
