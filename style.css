@@ -24,7 +24,6 @@ body.dark-alt {
 * {
   box-sizing: border-box;
 }
-
 body {
   margin: 0;
   background: var(--bg);
@@ -35,12 +34,15 @@ body {
   text-transform: lowercase;
   transition: background 0.3s ease, color 0.3s ease;
 
-  /* Center content vertically & horizontally */
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  min-height: 100vh;
-  text-align: center;
+  /* Remove Flexbox centering */
+  display: block;
+}
+
+.container {
+  max-width: 750px;      /* limits width */
+  margin: 80px auto;     /* centers the container horizontally */
+  padding: 0 20px;       /* spacing from edges */
+  text-align: left;      /* keeps text left-aligned */
 }
 
 .container {
