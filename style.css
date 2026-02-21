@@ -1,5 +1,7 @@
 :root {
-  --bg: #272822;
+  /* Dark mode (default) */
+  --bg: rgb(45, 42, 46);        /* main dark background */
+  --bg-alt: rgb(28, 28, 28);    /* alternative dark background */
   --text: #f8f8f2;
   --muted: #a6a28c;
   --accent: #66d9ef;
@@ -12,6 +14,11 @@ body.light {
   --muted: #666;
   --accent: #005cc5;
   --border: #ddd;
+}
+
+/* Optional: add a class for alternative dark mode */
+body.dark-alt {
+  --bg: var(--bg-alt);
 }
 
 * {
@@ -28,18 +35,16 @@ body {
   text-transform: lowercase;
   transition: background 0.3s ease, color 0.3s ease;
 
-  /* add these for vertical + horizontal centering */
+  /* Center content vertically & horizontally */
   display: flex;
-  justify-content: center; /* horizontal centering */
-  align-items: center;     /* vertical centering */
-  min-height: 100vh;       /* full viewport height */
-  text-align: center;      /* optional: center text inside container */
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  text-align: center;
 }
-
 
 .container {
   max-width: 750px;
-  /* remove margin-top since Flexbox handles centering */
   margin: 0;
   padding: 0 20px;
 }
