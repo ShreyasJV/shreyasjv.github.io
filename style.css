@@ -1,0 +1,109 @@
+:root {
+  --bg: #272822;
+  --text: #f8f8f2;
+  --muted: #a6a28c;
+  --accent: #66d9ef;
+  --border: #3e3d32;
+}
+
+body.light {
+  --bg: #f4f4f4;
+  --text: #111;
+  --muted: #666;
+  --accent: #005cc5;
+  --border: #ddd;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  background: var(--bg);
+  color: var(--text);
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+  font-size: 16px;
+  line-height: 1.6;
+  text-transform: lowercase;
+  transition: background 0.3s ease, color 0.3s ease;
+}
+
+.container {
+  max-width: 750px;
+  margin: 80px auto;
+  padding: 0 20px;
+}
+
+.top-line {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.name {
+  font-weight: 500;
+}
+
+.handle {
+  color: var(--accent);
+}
+
+.icons {
+  margin-left: auto;
+  display: flex;
+  gap: 15px;
+}
+
+.icons a,
+.icons button {
+  color: var(--muted);
+  background: none;
+  border: none;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+.icons a:hover,
+.icons button:hover {
+  color: var(--accent);
+}
+
+.tagline {
+  color: var(--muted);
+  margin-top: 8px;
+}
+
+nav {
+  margin-top: 20px;
+  border-bottom: 1px solid var(--border);
+  padding-bottom: 10px;
+}
+
+nav a {
+  margin-right: 20px;
+  text-decoration: none;
+  color: var(--muted);
+}
+
+nav a:hover {
+  color: var(--accent);
+}
+
+section {
+  margin-top: 40px;
+}
+
+h2 {
+  font-weight: 500;
+  margin-bottom: 10px;
+}
+
+a {
+  color: var(--accent);
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
