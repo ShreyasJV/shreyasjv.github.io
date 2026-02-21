@@ -19,6 +19,7 @@ body.light {
 /* Optional: add a class for alternative dark mode */
 body.dark-alt {
   --bg: var(--bg-alt);
+  --text: #f8f8f2; /* keep text readable */
 }
 
 * {
