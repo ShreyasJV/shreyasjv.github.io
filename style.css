@@ -34,15 +34,18 @@ body {
   text-transform: lowercase;
   transition: background 0.3s ease, color 0.3s ease;
 
-  /* Remove Flexbox centering */
-  display: block;
+  /* Use Flexbox to center the container block */
+  display: flex;
+  justify-content: center; /* horizontal center of container */
+  align-items: center;     /* vertical center of container */
+  min-height: 100vh;
 }
 
 .container {
-  max-width: 750px;      /* limits width */
-  margin: 80px auto;     /* centers the container horizontally */
-  padding: 0 20px;       /* spacing from edges */
-  text-align: left;      /* keeps text left-aligned */
+  max-width: 750px;      /* limit width so content isn’t stretched */
+  width: 100%;           /* fill up to max-width */
+  padding: 0 20px;       /* left/right spacing inside container */
+  text-align: left;      /* keep text left-aligned */
 }
 
 .container {
