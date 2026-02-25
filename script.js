@@ -37,15 +37,6 @@ toggle.addEventListener("click", () => {
   }
 });
 
-// For smooth icon animation
-#theme-toggle i {
-  transition: transform 0.3s ease, opacity 0.2s ease;
-}
-
-#theme-toggle:hover i {
-  transform: rotate(20deg);
-}
-
 // On page load
 const savedTheme = localStorage.getItem("theme");
 
