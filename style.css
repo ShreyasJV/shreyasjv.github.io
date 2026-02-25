@@ -244,3 +244,12 @@ a:hover {
 .research-item li {
   margin-bottom: 6px;
 }
+
+// For smooth icon animation
+#theme-toggle i {
+  transition: transform 0.3s ease, opacity 0.2s ease;
+}
+
+#theme-toggle:hover i {
+  transform: rotate(20deg);
+}
