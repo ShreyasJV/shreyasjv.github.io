@@ -8,14 +8,14 @@ function applyTheme(theme) {
 
   if (theme === "light") {
     body.classList.add("light");
-    icon.classList.add("fa-sun");
+    icon.classList.add("fa-moon"); // show moon → go to dark
   } 
   else if (theme === "dark-alt") {
     body.classList.add("dark-alt");
-    icon.classList.add("fa-gear");
+    icon.classList.add("fa-sun"); // show sun → go to light
   } 
   else {
-    icon.classList.add("fa-moon");
+    icon.classList.add("fa-sun"); // dark → show sun
   }
 
   localStorage.setItem("theme", theme);
