@@ -12,7 +12,7 @@ function applyTheme(theme) {
   } 
   else if (theme === "dark-alt") {
     body.classList.add("dark-alt");
-    icon.classList.add("fa-sun"); // show sun → go to light
+    icon.classList.add("fa-gear"); // show sun → go to light
   } 
   else {
     icon.classList.add("fa-sun"); // dark → show sun
