@@ -6,6 +6,9 @@
   --muted: #a6a28c;
   --accent: #66d9ef;
   --border: #3e3d32;
+  --sunglasses-size: 40px;
+  --sunglasses-box-bg: #f8f8f2;
+  --sunglasses-box-border: rgba(255, 255, 255, 0.18);
 }
 
 body.light {
@@ -14,6 +17,8 @@ body.light {
   --muted: #666;
   --accent: #005cc5;
   --border: #ddd;
+  --sunglasses-box-bg: #d1d5db;
+  --sunglasses-box-border: rgba(0, 0, 0, 0.18);
 }
 
 /* Alternative dark mode */
@@ -84,6 +89,27 @@ body {
 .icons a:hover,
 .icons button:hover {
   color: var(--accent);
+}
+
+.sunglasses-link {
+  position: fixed;
+  top: 16px;
+  right: 16px;
+  padding: 6px;
+  background: var(--sunglasses-box-bg);
+  border: 1px solid var(--sunglasses-box-border);
+  border-radius: 0;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  line-height: 0;
+  z-index: 1000;
+}
+
+.sunglasses-icon {
+  width: var(--sunglasses-size);
+  height: var(--sunglasses-size);
+  object-fit: contain;
 }
 
 .tagline {
